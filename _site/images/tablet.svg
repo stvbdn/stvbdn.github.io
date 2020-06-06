@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="268px" viewBox="0 0 183 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>IPAD</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-110.000000, -625.000000)">
+            <g id="Macbook__ipad__iphone" transform="translate(-35.000000, 160.000000)">
+                <g id="IPAD" transform="translate(146.000000, 466.000000)">
+                    <path d="M170.1,265.642458 L10.1371508,265.642458 C4.57709497,265.642458 0.0695530726,261.136592 0.0695530726,255.578212 L0.0695530726,10.1337989 C0.0695530726,4.57541899 4.57625698,0.0695530726 10.1371508,0.0695530726 L170.1,0.0695530726 C175.660894,0.0695530726 180.167598,4.57541899 180.167598,10.1337989 L180.167598,255.578212 C180.167598,261.136592 175.660894,265.642458 170.1,265.642458 Z" id="bezel" stroke="#7E89A3" stroke-width="2" fill="#2A2A2A" fill-rule="nonzero"></path>
+                    <path d="M170.1,265.642458 L10.1371508,265.642458 C4.57709497,265.642458 0.0695530726,261.136592 0.0695530726,255.578212 L0.0695530726,10.1337989 C0.0695530726,4.57541899 4.57625698,0.0695530726 10.1371508,0.0695530726 L170.1,0.0695530726 C175.660894,0.0695530726 180.167598,4.57541899 180.167598,10.1337989 L180.167598,255.578212 C180.167598,261.136592 175.660894,265.642458 170.1,265.642458 Z" id="bezel-2" stroke="#3E3E3E" stroke-width="2" fill-rule="nonzero"></path>
+                    <rect id="screen" stroke="#3E3E3E" fill="#FFFFFF" fill-rule="nonzero" x="14.2458101" y="26.8156425" width="152.513128" height="211.94162"></rect>
+                    <circle id="lock" stroke="#464646" cx="90.5203911" cy="251.414246" r="6.72150838"></circle>
+                    <circle id="camera" stroke="#464646" cx="89.6564246" cy="14.2374302" r="2.50558659"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
