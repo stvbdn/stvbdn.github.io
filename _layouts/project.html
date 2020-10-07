@@ -957,9 +957,9 @@
       <div class="project-header">
         <div class="row">
           <div class="column">
-            <div style="background-image: url('/{{ page.goop | relative_url }}');" class="showcase-item-image-holder">
+            <div style="background-image: url('{{ page.goop | relative_url }}');" class="showcase-item-image-holder">
               <!-- <img src="images/heartandbones/hnb-goop.svg" alt="" width="600px"> -->
-              <img class="showcase-item-image" src="/{{ page.display_image | relative_url }}" alt="" width="50px">
+              <img class="showcase-item-image" src="{{ page.display_image | relative_url }}" alt="" width="50px">
             </div>
           </div>
           <div class='column'>
@@ -967,7 +967,7 @@
               <div class="project-details">
                 <div class="project-title">
 
-                  <img src="/{{ page.logo | relative_url }}" alt="" width="250px">
+                  <img src="{{ page.logo | relative_url }}" alt="" width="250px">
                 </div>
                 <p class="intro-text">{{ page.headline }}</p>
               </div>
@@ -1033,7 +1033,7 @@
 
         <div class="wrapper">
           <div class="image-row full-width" data-aos="fade-up">
-            <img src="/{{ page.three_across | relative_url }}" alt="" style="width:150%; margin-left:-25%;">
+            <img src="{{ page.three_across | relative_url }}" alt="" style="width:150%; margin-left:-25%;">
             <span class="caption caption-three"><span data-aos="fade">{{ page.three_across_caption }}</span></span>
           </div>
         </div>
@@ -1043,11 +1043,11 @@
 
         <div class="wrapper">
           <div class="image-row" style="display:flex; flex-wrap: wrap;">
-            <img class="square-image" src="/{{ page.square_1 | relative_url }}" alt="" style="display:block; margin:0 auto;"
+            <img class="square-image" src="{{ page.square_1 | relative_url }}" alt="" style="display:block; margin:0 auto;"
               data-aos="fade-right">
-            <img class="square-image" src="/{{ page.square_2 | relative_url }}" alt="" style="display:block; margin:0 auto;"
+            <img class="square-image" src="{{ page.square_2 | relative_url }}" alt="" style="display:block; margin:0 auto;"
               data-aos="fade">
-            <img class="square-image" src="/{{ page.square_3 | relative_url }}" alt="" style="display:block; margin:0 auto;"
+            <img class="square-image" src="{{ page.square_3 | relative_url }}" alt="" style="display:block; margin:0 auto;"
               data-aos="fade-left">
             </div>
             <span class="caption caption-imagerow"><span data-aos="fade">{{ page.square_caption }}</span></span>
@@ -1074,7 +1074,7 @@
                 </div>
                 <div class="column">
                   <div class='feature-image-container'>
-                  <img class="features-image {{ page.features_image_class }}" src="/{{ page.features_image | relative_url }}" alt="" width="400;"
+                  <img class="features-image {{ page.features_image_class }}" src="{{ page.features_image | relative_url }}" alt="" width="400;"
                     data-aos="fade-left">
                   <span class="caption feature"><span data-aos="fade">{{ page.features_caption }}</span></span>
                   </div>
@@ -1088,7 +1088,7 @@
         {% if page.grid_image %}
         <div class="wrapper">
           <div class="image-row">
-            <img src="/{{ page.grid_image | relative_url }}" alt="" style="width:150%; margin-left:-25%;"
+            <img src="{{ page.grid_image | relative_url }}" alt="" style="width:150%; margin-left:-25%;"
             data-aos="fade-up">
             <span class="caption"><span data-aos="fade">{{ page.grid_caption }}</span></span>
           </div>
@@ -1102,7 +1102,7 @@
 
         <div class="column">
           <div class='project-logo'>
-            <img src="/{{ page.bug | relative_url }}" alt="" style="width:100%; margin: 0 auto;">
+            <img src="{{ page.bug | relative_url }}" alt="" style="width:100%; margin: 0 auto;">
           </div>
         </div>
 
@@ -1121,15 +1121,15 @@
               <div class="casestudy-item">
                 <div class="row reverse" style="display: flex; align-items: center;">
                   <div class="column">
-                    <div style="background-image: url(/{{ prev_case_study.goop | relative_url }});"
+                    <div style="background-image: url({{ prev_case_study.goop | relative_url }});"
                       class="casestudy-item-image-holder">
                       <!-- <img src="images/heartandbones/hnb-goop.svg" alt="" width="600px"> -->
-                      <img class="casestudy-item-image" src="/{{ prev_case_study.display_image | relative_url }}" alt="">
+                      <img class="casestudy-item-image" src="{{ prev_case_study.display_image | relative_url }}" alt="">
                     </div>
                   </div>
                   <div class="column">
                     <div class="casestudy-item-content">
-                      <img class="casestudy-logo" src="/{{ prev_case_study.logo | relative_url }}" alt="logo">
+                      <img class="casestudy-logo" src="{{ prev_case_study.logo | relative_url }}" alt="logo">
                       <p class="casestudy-item-type">{{ prev_case_study.type }}</p>
                       <hr class="line">
                       <h1 class="casestudy-item-copy">{{ prev_case_study.headline }}</h1>
@@ -1145,16 +1145,16 @@
               <div class="casestudy-item">
                 <div class="row" style="display: flex; align-items: center;">
                   <div class="column">
-                    <div style="background-image: url(/{{ next_case_study.goop | relative_url }});"
+                    <div style="background-image: url({{ next_case_study.goop | relative_url }});"
                       class="casestudy-item-image-holder">
                       <!-- <img src="images/heartandbones/hnb-goop.svg" alt="" width="600px"> -->
-                      <img class="casestudy-item-image" src="/{{ next_case_study.display_image | relative_url }}" alt=""
+                      <img class="casestudy-item-image" src="{{ next_case_study.display_image | relative_url }}" alt=""
                         width="50px">
                     </div>
                   </div>
                   <div class="column">
                     <div class="casestudy-item-content content-left">
-                      <img class="casestudy-logo" src="/{{ next_case_study.logo | relative_url }}" alt="logo">
+                      <img class="casestudy-logo" src="{{ next_case_study.logo | relative_url }}" alt="logo">
                       <p class="casestudy-item-type">{{ next_case_study.type }}</p>
                       <hr class="line">
                       <h1 class="casestudy-item-copy">{{ next_case_study.headline }}</h1>
