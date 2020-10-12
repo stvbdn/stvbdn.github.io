@@ -2,6 +2,9 @@ h1, h2, h3, h4, p{
     color:#161616;
     padding: 0px;
 }
+html.sr .load-hidden {
+    visibility: hidden;
+}
 html, body{
     margin: 0px;
     background-color: #161616;

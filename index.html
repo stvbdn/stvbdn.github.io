@@ -6,7 +6,7 @@ layout: main
   <!-- Hero-->
   <div class="hero-section section">
     <!-- Nav-->
-    <div class="nav">
+    <div class="nav load-hidden">
       <a class='nav-item'>About</a>
       <a class='nav-item btn'>Say Hello</a>
     </div>
@@ -14,15 +14,15 @@ layout: main
 
     <!-- Hero Content-->
     <span class="hero-content">
-      <img class="hero-logo" src="images/sb-logo.svg">
-      <h1 class="hero-title">Digital product developer specializing in highly responsive, user-friendly apps.</h1>
-      <p class="hero-description">With 50+ mobile apps developed and an average of 3 months timeframe from the initial call to the app stores for MVPs,
+      <img class="hero-logo load-hidden" src="images/sb-logo.svg">
+      <h1 class="hero-title load-hidden">Digital product developer specializing in highly responsive, user-friendly apps.</h1>
+      <p class="hero-description load-hidden">With 50+ mobile apps developed and an average of 3 months timeframe from the initial call to the app stores for MVPs,
       our team delivers performant mobile products swiftly.</p>
     </span>
     <!-- END Hero Content-->
 
     <!-- View Work Row -->
-    <div class='view-work-row'>
+    <div class='view-work-row load-hidden'>
       <span class="view-work-label">View Work</span>
       <img class="view-work-bug bounce" src="images/view-work.svg">
     </div>
@@ -39,7 +39,7 @@ layout: main
       {% for project in site_projects %}
         <div class="project-container {{ project.home_side }}">
           <a href="/projects/{{ project.project_name }}">
-            <div class="project">
+            <div class="project load-hidden">
               <img class="project-image" src='images/projects/{{ project.project_name }}/card.png'>
               <div class="project-caption">
                 <h3 class="project-title">{{ project.title }}</h3>
@@ -60,7 +60,7 @@ layout: main
     <div class="contact-content">
       <h1>Ready to start something?</h1>
       <p>Give us a shout and we'll be more than happy to have a conversation about your needs.</p>
-      <a href="mailto:hello@stephenbaden.dev">hello@stephenbaden.dev</a>
+      <a class="load-hidden" href="mailto:hello@stephenbaden.dev">hello@stephenbaden.dev</a>
     </div>
   </div>
   <!-- END Contact-->

@@ -1,4 +1,4 @@
-<html>
+<html class="sr">
 
 {% include head.html %}
 
@@ -18,21 +18,21 @@
     <!-- Hero -->
     <div class="casestudy-hero section">
       <div class="casestudy-image-container">
-        <img class="casestudy-image" src='/images/projects/{{ page.project_name }}/card.png'>
+        <img class="casestudy-image load-hidden" src='/images/projects/{{ page.project_name }}/card.png'>
       </div>
       <div class="casestudy-details-container">
         <div class="casestudy-details-inner">
           <div class="casestudy-details">
-            <h1 class="casestudy-title">{{ page.title }}</h1>
-            <p class="casestudy-description">{{ page.headline }}</p>
-            <div class='casestudy-detail-label'>Project Type</div>
-            <div class='casestudy-detail-value'>{{ page.type }}</div>
-            <div class='casestudy-detail-label'>Role</div>
-            <div class='casestudy-detail-value'>{{ page.role }}</div>
-            <div class='casestudy-detail-label'>Agency</div>
-            <div class='casestudy-detail-value'>{{ page.agency }}</div>
-            <div class='casestudy-detail-label'>Take a look</div>
-            <div class='casestudy-detail-value'><a href="{{ page.hyperlink }}">Launch Site</a></div>
+            <h1 class="casestudy-title load-hidden">{{ page.title }}</h1>
+            <p class="casestudy-description load-hidden">{{ page.headline }}</p>
+            <div class='casestudy-detail-label load-hidden'>Project Type</div>
+            <div class='casestudy-detail-value load-hidden'>{{ page.type }}</div>
+            <div class='casestudy-detail-label load-hidden'>Role</div>
+            <div class='casestudy-detail-value load-hidden'>{{ page.role }}</div>
+            <div class='casestudy-detail-label load-hidden'>Agency</div>
+            <div class='casestudy-detail-value load-hidden'>{{ page.agency }}</div>
+            <div class='casestudy-detail-label load-hidden'>Take a look</div>
+            <div class='casestudy-detail-value load-hidden'><a href="{{ page.hyperlink }}">Launch Site</a></div>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
     <!-- End Hero -->
 
     <!-- Intro -->
-    <div class="casestudy-intro section content-row">
+    <div class="casestudy-intro section content-row load-hidden">
       <div class="casestudy-intro-container">
         <h2 class="casestudy-content-title">{{ page.intro_title }}</h2>
         <p class="casestudy-content-text">{{ page.intro_content }}</p>
@@ -57,7 +57,7 @@
     <!-- END Three Across -->
 
     <!-- Content -->
-    <div class="casestudy-content section content-row">
+    <div class="casestudy-content section content-row load-hidden">
       <div class="casestudy-content-container">
         <h2 class="casestudy-content-title">{{ page.content_1_title }}</h2>
         <p class="casestudy-content-text">{{ page.content_1 }}</p>
@@ -76,7 +76,7 @@
     <!-- END Three Across -->
 
     <!-- Key Features -->
-    <div class="casestudy-features section content-row">
+    <div class="casestudy-features section content-row load-hidden">
       <div class="casestudy-features-container" style='background-color: {{ page.feature_color }}'>
         <h1 class="casestudy-features-title">Key features of the final build</h1>
         <ul>
@@ -97,7 +97,7 @@
     <!-- END Angle Grid -->
 
     <!-- Content -->
-    <div class="casestudy-content section content-row">
+    <div class="casestudy-content section content-row load-hidden">
       <div class="casestudy-content-container">
         <h2 class="casestudy-content-title">{{ page.content_3_title }}</h2>
         <p class="casestudy-content-text">{{ page.content_3 }}</p>
