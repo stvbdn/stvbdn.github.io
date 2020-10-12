@@ -1,1186 +1,203 @@
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:400&display=swap" rel="stylesheet">
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-  <style>
-    @import url('https://rsms.me/inter/inter.css');
-
-    html {
-      font-family: "AvenirNext-Regular";
-      overflow-x: hidden;
-    }
-
-    @supports (font-variation-settings: normal) {
-      html {
-        font-family: "AvenirNext-Regular";
-      }
-    }
-
-    @keyframes initialLoad {
-      0% {
-        transform: translateY(-10%);
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes logoLoad {
-      0% {
-        transform: translateY(-40%);
-        transform: scale(0.9) translateY(-40%);
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateY(0);
-        transform: scale(1) translateY(0%);
-        opacity: 1;
-      }
-    }
-
-    @keyframes showcaseLoad {
-      0% {
-        transform: translateY(10%);
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes showcaseDeviceLoad {
-      0% {
-        transform: translateX(-10%) rotate(10deg);
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateX(0) rotate(10deg);
-        opacity: 1;
-      }
-    }
-
-    @keyframes showcaseTitleLoad {
-      0% {
-        transform: translateY(150%);
-        opacity: 1;
-      }
-
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes dotsLoad {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes navLoad {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @font-face {
-      font-family: "AvenirNext-Bold";
-      src: url("fonts/AvenirNext-Bold.ttf") format("truetype");
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      /* background-color: #232323; */
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      /* background-color: #F9FFFF; */
-      background-color: {{ page.body_color }};
-      margin: 0;
-      padding: 0;
-      /* min-height:100%; */
-      /* height:100vh; */
-      height: 100%;
-    }
-
-    a {
-      color: 232323;
-    }
-
-    hr {
-      width: 50%;
-      text-align: left;
-    }
-
-    p {
-      font-family: "AvenirNext-Regular";
-      font-size: 1.25em;
-      line-height: 1.75em;
-    }
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      flex: 1 0 100%;
-    }
-
-    .column {
-      flex: 1;
-      flex-wrap: wrap;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    .footer {
-      position: fixed;
-      bottom: 0px;
-      /* height: 40px; */
-      width: 100%;
-      color: #FFFEF9;
-      background-color: #232323;
-      font-family: "AvenirNext-Regular";
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-top-left-radius: 50px;
-      border-top-right-radius: 50px;
-    }
-
-    .contact-text {
-      font-weight: 800;
-      color: white;
-    }
-
-    .container {
-      /* width: 100%;
-      max-width: 1000px; */
-      margin: auto;
-      padding-top: 30px;
-      overflow-x: hidden;
-
-      /* height:100%; */
-      /* padding-bottom: 300px; */
-      animation: 1s ease initialLoad;
-
-    }
-
-    .wrapper {
-      width: 100%;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .logo {
-      opacity: 0;
-      animation: 1s ease 1s logoLoad;
-      animation-fill-mode: forwards;
-      display: inline-block;
-    }
-
-    .nav {
-      text-align: right;
-      opacity: 0;
-      animation: 1s ease 1s navLoad;
-      animation-fill-mode: forwards;
-      display: inline;
-      float: right;
-      /* padding-top: 30px; */
-    }
-
-    .nav-item {
-      padding-right: 1em;
-      color: #777777;
-      text-decoration: none;
-    }
-
-    .intro-text {
-      /* font-family: 'Libre Baskerville', serif; */
-      /* font-family: 'TiemposHeadline-Bold', sans-serif; */
-      font-family: "AvenirNext-Regular";
-      /* font-weight: 800; */
-      letter-spacing: -2.5px;
-      letter-spacing: -0.1rem;
-      line-height: 1.25em;
-      font-size: 3.5vw;
-      font-size: 40px;
-      margin-top: 20px;
-      color: #323232;
-      display: flex;
-    }
-
-    .dots {
-      text-align: center;
-      opacity: 0;
-      animation: 2s ease 1.3s dotsLoad;
-      animation-fill-mode: forwards;
-    }
-
-    .dot {
-      height: 10px;
-      width: 10px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .active {
-      background-color: #777;
-    }
-
-    .center {
-      text-align: center
-    }
-
-    .showcase {
-      padding-top: 80px;
-      opacity: 0;
-      animation: 1s ease 0.5s showcaseLoad;
-      animation-fill-mode: forwards;
-      /* display: flex; */
-    }
-
-    .showcase-item {
-      /* width: 500px; */
-      /* height: 500px; */
-      margin: auto;
-      margin-bottom: 125px;
-      /* border-radius: 50%; */
-
-      /* margin-left: 15px;
-        margin-right: 15px; */
-      /* background-color: #473D3D; */
-      /* background-image: url('images/showcase-item-test-2.png'); */
-      background-size: cover;
-      display: block;
-      /* position: relative; */
-
-      -webkit-transition: all .6s ease-in-out;
-      /* For Safari 3.1 to 6.0 */
-      transition: all .6s ease;
-    }
-
-    /* .showcase-item:hover{
-        transform: scale(1.02) translateY(-2%);
-        box-shadow: 5px 10px 50px 2px #cccccc;
-        cursor: pointer;
-        display: inline;
-      } */
-    .showcase-item-image-holder {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      /* height: 100%; */
-      width: 100%;
-      min-width: 200px;
-      background-repeat: no-repeat;
-      background-position: center;
-      /* max-width: 300px; */
-    }
-
-    .casestudy-item-image-holder {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      /* height: 100%; */
-      width: 100%;
-      max-width: 300px;
-    }
-
-    .showcase-item-image {
-      width: 100%;
-      margin: 0 auto;
-      display: block;
-      width: 70%;
-      max-width: 500px;
-      max-height: 500px;
-      min-height: 250px;
-      /* border-radius: 50%; */
-      overflow: hidden;
-      display: flex;
-      object-fit: contain;
-    }
-
-    .casestudy-logo{
-      height: 30px;
-    }
-
-    .casestudy-item-image {
-      height: 200px;
-      width: 100%;
-      margin: 0 auto;
-      display: block;
-      width: 70%;
-      min-height: 190px;
-      max-width: 500px;
-      max-height: 500px;
-      /* border-radius: 50%; */
-      overflow: hidden;
-      display: flex;
-      object-fit: contain;
-    }
-
-    .showcase-item-device {
-      transform: rotate(10deg);
-      opacity: 0;
-      animation: 1s ease 0.7s showcaseDeviceLoad;
-      animation-fill-mode: forwards;
-      position: absolute;
-      right: -80px;
-      top: 30px;
-
-      -webkit-transition: all .6s ease-in-out;
-      /* For Safari 3.1 to 6.0 */
-      transition: all .6s ease;
-    }
-
-    .showcase-item-title {
-      font-size: 2.0rem;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      /* margin: auto;
-        position: absolute;
-        height: 2.3em;
-        top:-3em;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        z-index: -1;
-
-        animation: 1s ease 1.1s showcaseTitleLoad;
-        animation-fill-mode: forwards; */
-    }
-
-    .showcase-item-type {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.0rem;
-      padding-bottom: 10px;
-      color: #323232;
-    }
-
-    .showcase-item-copy {
-      line-height: 1.25em;
-      font-weight: 200;
-      font-family: 'inter', sans-serif;
-      font-size: 1.5rem;
-      /* position: absolute;
-        left:40px;
-        bottom: 30px;
-        width: 260px;
-        line-height: 1.25em;
-        color:#FAFAFA; */
-    }
-
-    .showcase-item-content {
-      font-family: 'inter', sans-serif;
-      /* left:40px; */
-      bottom: 30px;
-      width: 40%;
-      color: #323232;
-      display: inline;
-      padding-top: 100px;
-    }
-
-    .showcase-item-link {
-      color: #323232;
-    }
-
-    .right {
-      float: right;
-    }
-
-    .left {
-      float: left;
-      text-align: right;
-      padding-right: 10%;
-    }
-
-    .project-title {
-      font-family: 'inter', sans-serif;
-      font-size: 2em;
-      margin-bottom: 0px;
-      display: flex;
-    }
-
-    .project-label {
-      font-family: 'inter', sans-serif;
-      font-size: 0.8em;
-      margin-bottom: 0px;
-      display: flex;
-      opacity: 50%;
-    }
-
-    .project-value {
-      font-family: 'TiemposHeadline-Medium', sans-serif;
-      font-size: 24px;
-      margin-top: 0px
-    }
-
-    .launch-site {
-      text-align: center;
-      font-size: 1.5em;
-      color: #232323;
-      display: inline-block;
-      width: 100%;
-      margin: auto;
-      padding-bottom: 40px;
-    }
-
-    /* .showcase-item-image {
-      height: 400px;
-      width: 400px;
-      margin: auto;
-      margin-top: 50px;
-      padding-right: 50px;
-      border-radius: 50%;
-      overflow: hidden;
-      display: inline-block;
-      float: left;
-    } */
-
-    .project-header {
-      margin-top: 50px;
-    }
-
-    .project-information {
-      margin-top: 10px;
-      display: inline-block;
-      width: 100%;
-      padding-bottom: 60px;
-      padding-left: 69px;
-    }
-
-    .project-information-item {
-      display: inline-block;
-      padding-right: 30px;
-    }
-
-    .showcase-item {
-      /* width: 500px; */
-      /* height: 500px; */
-      margin: auto;
-      margin-bottom: 125px;
-      /* border-radius: 50%; */
-
-      /* margin-left: 15px;
-        margin-right: 15px; */
-      /* background-color: #473D3D; */
-      /* background-image: url('images/showcase-item-test-2.png'); */
-      background-size: cover;
-      display: block;
-      /* position: relative; */
-
-      -webkit-transition: all .6s ease-in-out;
-      /* For Safari 3.1 to 6.0 */
-      transition: all .6s ease;
-    }
-
-    .project-details {
-      display: block;
-      width: 100%;
-    }
-
-    .project-details-holder {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      height: 100%;
-    }
-
-    .casestudy-item-image-holder {
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .casestudy-item-image {
-      width: 100%;
-      margin: auto;
-      /* margin-top: 50px; */
-      /* padding-right:50px; */
-      /* padding-top: 100px; */
-      /* border-radius: 50%; */
-      overflow: hidden;
-      display: block;
-    }
-
-    .casestudy-item-device {
-      transform: rotate(10deg);
-      opacity: 0;
-      animation: 1s ease 0.7s showcaseDeviceLoad;
-      animation-fill-mode: forwards;
-      position: absolute;
-      right: -80px;
-      top: 30px;
-
-      -webkit-transition: all .6s ease-in-out;
-      /* For Safari 3.1 to 6.0 */
-      transition: all .6s ease;
-    }
-
-    .casestudy-item-title {
-      font-size: 1.25rem;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      margin-top: 0;
-      margin-bottom: 5px;
-      /* margin: auto;
-        position: absolute;
-        height: 2.3em;
-        top:-3em;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        z-index: -1;
-
-        animation: 1s ease 1.1s showcaseTitleLoad;
-        animation-fill-mode: forwards; */
-    }
-
-    .casestudy-item-type {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.75rem;
-      /* padding-bottom: 10px; */
-      color: #323232;
-      opacity: 50%;
-      margin-top: 12;
-      margin-bottom: 5;
-    }
-
-    .casestudy-item-copy {
-      line-height: 1.25em;
-      font-weight: 200;
-      font-family: 'inter', sans-serif;
-      font-size: 1.0rem;
-      margin-bottom: 0px;
-      margin-top: 0px;
-      padding-bottom: 20px;
-      /* position: absolute;
-        left:40px;
-        bottom: 30px;
-        width: 260px;
-        line-height: 1.25em;
-        color:#FAFAFA; */
-    }
-
-    .casestudy-item-content {
-      font-family: 'inter', sans-serif;
-      /* left:40px; */
-      /* bottom: 30px; */
-      width: 100%;
-      color: #323232;
-      /* padding-top: 50px; */
-      /* display: inline; */
-      /* padding-top: 100px; */
-      /* float: left; */
-    }
-
-    .case-study-left {
-      float: left;
-    }
-
-    .case-study-right {
-      /* float:right; */
-    }
-
-    .other-case-studies {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 100px;
-      background-color: #DCEBEB;
-    }
-
-    .other-case-studies-title {
-      font-weight: normal;
-      text-align: center;
-      font-size: 1.5em;
-      padding-bottom: 40px;
-      /* color: #323232; */
-      opacity: 70%;
-    }
-
-    .other-case-studies-wrapper {
-      max-width: 1300px;
-      margin: 0 auto;
-    }
-
-    .casestudy-content-left {
-      float: left;
-    }
-
-    .reverse {
-      flex-direction: row-reverse;
-      text-align: right;
-    }
-
-    .line {
-      float: left;
-      overflow: hidden;
-      display: none;
-    }
-
-    .reverse .line {
-      float: right;
-    }
-
-    .intro {
-      text-align: center;
-      padding-bottom: 0px !important;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* .intro::first-letter{
-      font-size: 2.5em;
-      font-weight: 600;
-      padding-left:10%;
-      font-family: 'TiemposHeadline-Medium', sans-serif;
-    } */
-
-    .content p {
-      max-width: 600px;
-      margin: 0 auto;
-      padding-bottom: 80px;
-    }
-
-    /* .image-row {
-      padding-bottom: 80px;
-    } */
-
-    /* .image-row img{
-      padding-bottom:80px;
-    } */
-    .key-features {
-      padding-bottom: 80px;
-    }
-
-    .key-features li {
-      font-size: 1.25em;
-      padding-bottom: 20px;
-      list-style-type: none;
-    }
-
-    .key-features hr {
-      margin-bottom: 20px;
-      border-color: #E0EBEB;
-      opacity: 20%;
-    }
-
-    .section-header {
-      font-family: 'TiemposHeadline-Medium', sans-serif;
-      padding-bottom: 10px;
-      font-size: 42px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .get-in-touch {
-      color: FFFEF9;
-    }
-
-    .project-logo {
-      padding-bottom: 150px;
-      width: 100px;
-      margin: 0 auto;
-    }
-
-    .caption {
-      font-size: 14px;
-      margin: 0 auto;
-      text-align: center;
-      opacity: 50%;
-      padding-bottom: 0px;
-      padding-top: 2em;
-      display: block;
-    }
-    
-    .caption-three {
-      padding-top: 0px;
-      padding-bottom: 60px;
-    }
-    
-    .caption-imagerow{
-      padding-bottom: 60px;
-      padding-top: 0em;
-    }
-
-    .caption.feature {
-      padding-top: 0px;
-      padding-left: 10em;
-    }
-
-    .full-width-band {
-      padding-top: 80px;
-      margin-bottom: 60px;
-    }
-
-    .features-image {
-      width: 175%;
-    }
-    
-    .features-image-phone{
-      max-width: 500px;
-      padding-left: 0px;
-    }
-
-    .intro-wrapper {
-      /* background-color: red; */
-      /* background-image: url("imag/es/intro-circle | relative_url.svg"); */
-      background-image: url("data:image/svg+xml,%3Csvg style='display: block; margin:0 auto; margin-bottom:-230px;' width='296px' height='296px'%0AviewBox='0 0 296 296' version='1.1' xmlns='http://www.w3.org/2000/svg'%0Axmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Desktop-HD-Copy-12' transform='translate(-572.000000, -774.000000)' fill-rule='nonzero' stroke='%23{{page.circle_color}}' stroke-width='25'%3E%3Ccircle id='Oval-Copy' cx='720' cy='922' r='135'%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: center;
-      /* Center the image */
-      margin-bottom: 80px;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .square-image{
-      padding-bottom: 60px;
-    }
-
-    @media screen and (max-width: 1300px) {
-      .features-image{
-        width: 125%;
-        padding-left: 100px;
-      }
-      .features-image-phone{
-        max-width: 500px;
-        padding-left: 0px;
-      }
-
-      .caption.feature{
-        padding-left: 0px;
-      }
-      .feature-image-container{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-    @media screen and (max-width: 700px) {
-      .column {
-        flex: 1 0 100%;
-        /* background-color: red; */
-      }
-
-      .intro-text {
-        letter-spacing: -2.5px;
-        letter-spacing: -0.1rem;
-        /* line-height: 1.25em; */
-        font-size: 5.5vw;
-        /* font-size: 1000px; */
-        color: #323232;
-      }
-
-      .reverse {
-        flex-direction: row;
-        text-align: left;
-      }
-
-      /* .row.reverse .line{
-        float: left;
-      } */
-
-      .line,
-      .reverse .line {
-        float: none;
-      }
-
-      .line {
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
-
-      .casestudy-item-content {
-        text-align: center;
-        padding-top: 30px;
-      }
-
-      .other-case-studies-title {
-        padding-bottom: 0px;
-      }
-
-      .other-case-studies .casestudy-item {
-        padding-top: 50px;
-      }
-
-      .casestudy-item-image {
-        /* padding-bottom: 20px; */
-        max-width: 60%;
-      }
-
-      .casestudy-item-image-holder {
-        max-width: 500px;
-      }
-
-      .casestudy-item-image-holder .showcase-item-image {
-        max-width: 250px;
-      }
-      
-      .casestudy-item-image-holder .casestudy-item-image {
-        max-width: 250px;
-      }
-
-      .casestudy-item-title {
-        font-size: 1.5rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        margin: 0;
-        padding-bottom: 5px;
-      }
-
-      .casestudy-item-type {
-        font-family: 'Raleway', sans-serif;
-        font-size: 0.75rem;
-        padding-bottom: 6px;
-        padding-top: 12px;
-        margin: 0;
-        color: #323232;
-      }
-
-      .casestudy-item-copy {
-        line-height: 1.25em;
-        font-weight: 200;
-        font-family: 'inter', sans-serif;
-        font-size: 1.0rem;
-      }
-
-      .project-title {
-        font-size: 1.5em;
-        padding-top: 50px;
-      }
-
-      .project-title svg {
-        margin: 0 auto;
-      }
-
-      .intro-text {
-        font-size: 2em;
-        margin-bottom: 20px;
-        margin-top: 15px;
-        text-align: center;
-      }
-
-      .project-label {
-        margin-top: 0px;
-        font-size: 0.8em;
-        opacity: 50%;
-      }
-
-      .project-value {
-        font-size: 1.25em;
-        margin-bottom: 10px;
-      }
-
-      .project-information {
-        padding-bottom: 20px;
-        text-align: center;
-        padding-left: 0px;
-      }
-
-      .project-information-item {
-        padding-right: 0px;
-      }
-
-      .image-row .square-image {
-        padding-bottom: 30px;
-      }
-
-      .image-row .square-image:last-of-type {
-        padding-bottom: 0px;
-      }
-
-      .features-image {
-        width: 128%;
-      }
-
-      .caption.feature {
-        padding-left: 0em;
-      }
-
-    }
-  </style>
-</head>
+{% include head.html %}
 
 <body>
-  <div class='container'>
-    <div class="wrapper">
-      <div class="row">
-        <div class="column">
-          {% include header.html %}
-          
-          {% comment %}
-          <img class="logo" src="images/sb-logo.svg" alt="Stephen Baden" height="50px" width="50px" />
-          <div class='nav'>
-            <!-- <a class="nav-item" href="work.html">work</a> -->
-            <a class="nav-item" href="about.html">
-              <img src="images/icon-hamburger.svg" width="60px" alt="">
-            </a>
-          </div>
-          {% endcomment %}
-        </div>
+  <div class="container">
+
+    <div class="section">
+      <!-- Nav-->
+      <a href="/"><img class="nav-logo" src="/images/sb-logo.svg"></a>
+      <div class="nav">
+        <a class='nav-item'>About</a>
+        <a class='nav-item btn'>Say Hello</a>
       </div>
+      <!-- END Nav-->
     </div>
 
-    <div class="wrapper">
-      <div class="project-header">
-        <div class="row">
-          <div class="column">
-            <div style="background-image: url('{{ page.goop | relative_url }}');" class="showcase-item-image-holder">
-              <!-- <img src="images/heartandbones/hnb-goop.svg" alt="" width="600px"> -->
-              <img class="showcase-item-image" src="{{ page.display_image | relative_url }}" alt="" width="50px">
-            </div>
-          </div>
-          <div class='column'>
-            <div class="project-details-holder">
-              <div class="project-details">
-                <div class="project-title">
-
-                  <img src="{{ page.logo | relative_url }}" alt="" width="250px">
-                </div>
-                <p class="intro-text">{{ page.headline }}</p>
-              </div>
-            </div>
+    <!-- Hero -->
+    <div class="casestudy-hero section">
+      <div class="casestudy-image-container">
+        <img class="casestudy-image" src='/images/projects/{{ page.project_name }}/card.png'>
+      </div>
+      <div class="casestudy-details-container">
+        <div class="casestudy-details-inner">
+          <div class="casestudy-details">
+            <h1 class="casestudy-title">{{ page.title }}</h1>
+            <p class="casestudy-description">{{ page.headline }}</p>
+            <div class='casestudy-detail-label'>Project Type</div>
+            <div class='casestudy-detail-value'>{{ page.type }}</div>
+            <div class='casestudy-detail-label'>Role</div>
+            <div class='casestudy-detail-value'>{{ page.role }}</div>
+            <div class='casestudy-detail-label'>Agency</div>
+            <div class='casestudy-detail-value'>{{ page.agency }}</div>
+            <div class='casestudy-detail-label'>Take a look</div>
+            <div class='casestudy-detail-value'><a href="{{ page.hyperlink }}">Launch Site</a></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Hero -->
 
-    <div class="wrapper">
-      <div class='project-information'>
-        <div class="row">
-          <div class="column" style="padding-left:0px; padding-right:0px;">
-            <div class="project-information-item">
-              <p class="project-label">Project Type</p>
-              <p class="project-value">Web Application</p>
-            </div>
-          </div>
-
-          <div class="column" style="padding-left:0px; padding-right:0px;">
-            <div class="project-information-item">
-              <p class="project-label">Role</p>
-              <p class="project-value">Lead Developer</p>
-            </div>
-          </div>
-
-          <div class="column" style="padding-left:0px; padding-right:0px;">
-            <div class="project-information-item">
-              <p class="project-label">Agency</p>
-              <p class="project-value">Lift Interactive</p>
-            </div>
-          </div>
-
-          <div class="column" style="padding-left:0px; padding-right:0px;">
-            <div class="project-information-item">
-              <p class="project-label">Take a look</p>
-              <p class="project-value"><a href="{{ page.hyperlink }}">Launch Site</a></p>
-            </div>
-          </div>
-        </div>
+    <!-- Intro -->
+    <div class="casestudy-intro section content-row">
+      <div class="casestudy-intro-container">
+        <h2 class="casestudy-content-title">{{ page.intro_title }}</h2>
+        <p class="casestudy-content-text">{{ page.intro_content }}</p>
       </div>
     </div>
+    <!-- END Intro -->
 
-    <div class='column'>
-      <div class="content">
-        <div class='intro-wrapper'>
-          <!-- <svg style="display: block; margin:0 auto; margin-bottom:-230px;" width="296px" height="296px"
-            viewBox="0 0 296 296" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Desktop-HD-Copy-12" transform="translate(-572.000000, -774.000000)" fill-rule="nonzero"
-                stroke="#DCEBEB" stroke-width="25">
-                <circle id="Oval-Copy" cx="720" cy="922" r="135"></circle>
-              </g>
-            </g>
-          </svg> -->
-          <!-- Old SVG Color: #F2F9F9 -->
-          <div>
-            <h2 class='section-header center'>{{ page.intro_title }}</h2>
-            <p class="intro">{{ page.intro_content }}</p>
-          </div>
-        </div>
-
-        <div class="wrapper">
-          <div class="image-row full-width" data-aos="fade-up">
-            <img src="{{ page.three_across | relative_url }}" alt="" style="width:150%; margin-left:-25%;">
-            <span class="caption caption-three"><span data-aos="fade">{{ page.three_across_caption }}</span></span>
-          </div>
-        </div>
-
-        <h2 class='section-header' data-aos="fade-up">{{ page.content_1_title }}</h2>
-        <p data-aos="fade-up">{{ page.content_1 }}</p>
-
-        <div class="wrapper">
-          <div class="image-row" style="display:flex; flex-wrap: wrap;">
-            <img class="square-image" src="{{ page.square_1 | relative_url }}" alt="" style="display:block; margin:0 auto;"
-              data-aos="fade-right">
-            <img class="square-image" src="{{ page.square_2 | relative_url }}" alt="" style="display:block; margin:0 auto;"
-              data-aos="fade">
-            <img class="square-image" src="{{ page.square_3 | relative_url }}" alt="" style="display:block; margin:0 auto;"
-              data-aos="fade-left">
-            </div>
-            <span class="caption caption-imagerow"><span data-aos="fade">{{ page.square_caption }}</span></span>
-        </div>
-
-        <h2 class='section-header' data-aos="fade-up">{{ page.content_2_title }}</h2>
-        <p data-aos="fade-up">{{ page.content_2 }}</p>
-
-        <div class="full-width-band" style="background-color: #565288;">
-          <div class="wrapper" style="background-color: #565288; color:white;">
-            <div class="key-features">
-              <div class="row">
-                <div class="column" data-aos="fade-right">
-                  <h2 class="section-header">Key features of the final build</h2>
-                  <ul>
-                    {% for feature in page.features %}
-                      <li data-aos="fade-right">{{ feature }}</li>
-                      {% if forloop.last %}
-                      {% else %}
-                          <span data-aos="fade"><hr></span>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                </div>
-                <div class="column">
-                  <div class='feature-image-container'>
-                  <img class="features-image {{ page.features_image_class }}" src="{{ page.features_image | relative_url }}" alt="" width="400;"
-                    data-aos="fade-left">
-                  <span class="caption feature"><span data-aos="fade">{{ page.features_caption }}</span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        {% if page.grid_image %}
-        <div class="wrapper">
-          <div class="image-row">
-            <img src="{{ page.grid_image | relative_url }}" alt="" style="width:150%; margin-left:-25%;"
-            data-aos="fade-up">
-            <span class="caption"><span data-aos="fade">{{ page.grid_caption }}</span></span>
-          </div>
-        </div>
-        {% endif %}
-
-        <h2 class='section-header' data-aos="fade-up">{{ page.content_3_title }}</h2>
-        <p data-aos="fade-up">{{ page.content_3 }}</p>
-
-        <a href="{{ page.hyperlink }}" class="launch-site">Launch Site</a>
-
-        <div class="column">
-          <div class='project-logo'>
-            <img src="{{ page.bug | relative_url }}" alt="" style="width:100%; margin: 0 auto;">
-          </div>
-        </div>
-
+    <!-- Three Across -->
+    <div class="section full">
+      <div class="casestudy-image-three-across-container">
+        <img class="casestudy-image-three-across"" src=" /images/projects/{{ page.project_name }}/three-across.png" alt="">
       </div>
     </div>
+    <!-- END Three Across -->
 
+    <!-- Content -->
+    <div class="casestudy-content section content-row">
+      <div class="casestudy-content-container">
+        <h2 class="casestudy-content-title">{{ page.content_1_title }}</h2>
+        <p class="casestudy-content-text">{{ page.content_1 }}</p>
+      </div>
+    </div>
+    <!-- END Content -->
+
+    <!-- Three Across -->
+    <div class="section">
+      <div class="casestudy-image-squares-container">
+        <img class="casestudy-image-square"" src=" /images/projects/{{ page.project_name }}/square-1.png" alt="">
+        <img class="casestudy-image-square"" src=" /images/projects/{{ page.project_name }}/square-2.png" alt="">
+        <img class="casestudy-image-square"" src=" /images/projects/{{ page.project_name }}/square-3.png" alt="">
+      </div>
+    </div>
+    <!-- END Three Across -->
+
+    <!-- Key Features -->
+    <div class="casestudy-features section content-row">
+      <div class="casestudy-features-container" style='background-color: {{ page.feature_color }}'>
+        <h1 class="casestudy-features-title">Key features of the final build</h1>
+        <ul>
+          {% for feature in page.features %}
+              <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <!-- END Key Features -->
+
+    <!-- Angle Grid -->
+    {% if page.angle_grid %}
+    <div class="full-row-image-container">
+      <img class="full-row-image" src="/images/projects/{{ page.project_name }}/angle-grid.png" alt="">
+    </div>
+    {% endif %}
+    <!-- END Angle Grid -->
+
+    <!-- Content -->
+    <div class="casestudy-content section content-row">
+      <div class="casestudy-content-container">
+        <h2 class="casestudy-content-title">{{ page.content_3_title }}</h2>
+        <p class="casestudy-content-text">{{ page.content_3 }}</p>
+      </div>
+    </div>
+    <!-- END Content -->
+
+    <!-- Launch Site -->
+    <div class="launch-site section">
+      <div class="launch-site-container">
+        <span href="{{ page.hyperlink }}">Launch Site</span>
+        <img class="casestudy-bug" src="/images/projects/{{ page.project_name }}/bug.svg" alt="">
+      </div>
+    </div>
+    <!-- END Launch Site -->
+
+
+    <!-- Other Case Studies -->
     {% assign prev_case_study = site.projects | where: "title", page.prev_case_study | first %}
     {% assign next_case_study = site.projects | where: "title", page.next_case_study | first %}
-    <div class="other-case-studies">
-      <h1 class="other-case-studies-title">Want more? Check out another case study.</h1>
-      <div class="other-case-studies-wrapper">
-
-        <div class="row">
-          <div class="column">
-            <div class="case-study">
-              <div class="casestudy-item">
-                <div class="row reverse" style="display: flex; align-items: center;">
-                  <div class="column">
-                    <div style="background-image: url({{ prev_case_study.goop | relative_url }});"
-                      class="casestudy-item-image-holder">
-                      <!-- <img src="images/heartandbones/hnb-goop.svg" alt="" width="600px"> -->
-                      <img class="casestudy-item-image" src="{{ prev_case_study.display_image | relative_url }}" alt="">
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="casestudy-item-content">
-                      <img class="casestudy-logo" src="{{ prev_case_study.logo | relative_url }}" alt="logo">
-                      <p class="casestudy-item-type">{{ prev_case_study.type }}</p>
-                      <hr class="line">
-                      <h1 class="casestudy-item-copy">{{ prev_case_study.headline }}</h1>
-                      <a class="casestudy-item-link" href="{{ prev_case_study.url }}">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div class="section">
+      <div class="other-casestudies">
+        <h1 class="other-casestudies-title">View Another Case Study</h1>
+        <a href="/projects/{{ prev_case_study.project_name }}">
+        <div class="other-casestudy">
+          <div class="other-casestudy-content-container">
+            <img src="/images/projects/{{ prev_case_study.project_name }}/card.png" alt="">
+            <div class="other-casestudy-content">
+              <h1 class="other-casestudy-title">{{ prev_case_study.title }}</h1>
+              <p class="other-casestudy-description">{{ prev_case_study.headline }}</p>
             </div>
           </div>
-          <div class="column">
-            <div class="case-study">
-              <div class="casestudy-item">
-                <div class="row" style="display: flex; align-items: center;">
-                  <div class="column">
-                    <div style="background-image: url({{ next_case_study.goop | relative_url }});"
-                      class="casestudy-item-image-holder">
-                      <!-- <img src="images/heartandbones/hnb-goop.svg" alt="" width="600px"> -->
-                      <img class="casestudy-item-image" src="{{ next_case_study.display_image | relative_url }}" alt=""
-                        width="50px">
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="casestudy-item-content content-left">
-                      <img class="casestudy-logo" src="{{ next_case_study.logo | relative_url }}" alt="logo">
-                      <p class="casestudy-item-type">{{ next_case_study.type }}</p>
-                      <hr class="line">
-                      <h1 class="casestudy-item-copy">{{ next_case_study.headline }}</h1>
-                      <a class="casestudy-item-link" href="{{ next_case_study.url }}">View Project</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+        </a>
+        <a href="/projects/{{ next_case_study.project_name }}">
+        <div class="other-casestudy">
+          <div class="other-casestudy-content-container">
+            <img src="/images/projects/{{ next_case_study.project_name }}/card.png" alt="">
+            <div class="other-casestudy-content">
+              <h1 class="other-casestudy-title">{{ next_case_study.title }}</h1>
+              <p class="other-casestudy-description">{{ next_case_study.headline }}</p>
+            </div>
+          </div>
+        </div>
+        </a>
 
       </div>
     </div>
-
+    <!-- END Other Case Studies -->
   </div>
-  <div class="footer">Want to work together? <span class='contact-text'><a href="mailto:hi@stvbdn.com"
-        class="get-in-touch">Get in
-        touch</a></span></div>
+
+
+  <script type="application/javascript">
+    var slideDown = {
+        distance: '10%',
+        origin: 'top',
+        delay: 0,
+        duration: 700,
+        opacity: 0,
+        delay: 100
+    };
+    var slideUp = {
+        distance: '10%',
+        origin: 'bottom',
+        delay: 0,
+        duration: 700,
+        opacity: 0,
+        delay: 100
+      };
+    var slideRight = {
+        distance: '10%',
+        origin: 'left',
+        delay: 50,
+        duration: 700,
+        opacity: 0,
+        delay: 100
+      };
+    var slowFade = {
+        // origin: 'left',
+        // delay: 50,
+        duration: 2000,
+        opacity: 0,
+        delay: 600
+      };
+    var normalFade = {
+        // origin: 'left',
+        // delay: 50,
+        duration: 2000,
+        opacity: 0,
+        // delay: 600
+      };
+
+    ScrollReveal().reveal('.casestudy-image', slideRight);
+    ScrollReveal().reveal('.casestudy-title', slideDown);
+    ScrollReveal().reveal('.casestudy-description', normalFade);
+    ScrollReveal().reveal('.casestudy-detail-label', normalFade);
+    ScrollReveal().reveal('.casestudy-detail-value', normalFade);
+    ScrollReveal().reveal('.content-row', slideUp);
+  </script>
 </body>
 
-<footer>
-  <script>
-    AOS.init();
-  </script>
-</footer>
-
 </html>
+<!-- Online learning platform, Futures forecasting, Subscription Box Service, Case Management Software, Fitness Tracker -->

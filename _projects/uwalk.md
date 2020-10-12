@@ -1,15 +1,18 @@
 ---
 layout: project
+home_side: left
+project_name: uwalk
+type: Web App
+title: UWalk
+
 order: 5
 metatitle: UWalk ✕ Stephen Baden
-metadescription: Community-based fitness tracking and goal setting
-title: UWalk
 headline: Community-based fitness tracking and goal setting
+metadescription: Community-based fitness tracking and goal setting
 hyperlink: https://www.uwalk.ca/
 # hex: "6B5278"
 agency: Lift Interactive
 role: Lead Developer
-type: Web App
 goop: images/uwalk/uwalk-goop.svg
 display_image: images/uwalk/uwalk-tablet-phone.png
 logo: images/uwalk/uwalk-logo.svg

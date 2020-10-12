@@ -1,15 +1,18 @@
 ---
 layout: project
+home_side: right
+project_name: mycompass
+type: Web App
+title: MyCompass
+
 order: 4
 metatitle: MyCompass ✕ Stephen Baden
 metadescription: Person-centered planning for people with disabilities
-title: MyCompass
 headline: Person-centered planning for people with disabilities
 hyperlink: https://www.mycompassplanning.com/
 # hex: "6B5278"
 agency: Lift Interactive
 role: Lead Developer
-type: Web App
 goop: images/mycompass/mycompass-goop.svg
 display_image: images/mycompass/mycompass-imac.png
 logo: images/mycompass/mycompass-logo.svg

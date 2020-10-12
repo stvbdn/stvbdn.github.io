@@ -1,15 +1,19 @@
 ---
 layout: project
+home_side: right
+project_name: resalytics
+type: Web App
+title: Resalytics
+feature_color: "#202024"
+
 order: 2
 metatitle: Resalytics ✕ Stephen Baden
 metadescription: Futures forecasting with on steroids
-title: Resalytics
 headline: Futures forecasting with on steroids
 hyperlink: https://www.resalytics.com/
 # hex: "6B5278"
 agency: Lift Interactive
 role: Lead Developer
-type: Web App
 goop: images/resalytics/resalytics-goop.svg
 display_image: images/resalytics/resalytics-macbook.png
 logo: images/resalytics/resalytics-logo.svg

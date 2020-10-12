@@ -1,15 +1,19 @@
 ---
 layout: project
+home_side: left
+project_name: frockbox
+type: Web App
+title: Frockbox
+angle_grid: true
+
 order: 3
 metatitle: Frockbox ✕ Stephen Baden
 metadescription: Clothing subscription service that comes with your own personal stylist
-title: Frockbox
 headline: Clothing subscription service that comes with your own personal stylist
 hyperlink: https://www.frockbox.com/
 # hex: "6B5278"
 agency: Lift Interactive
 role: Lead Developer
-type: Web App
 goop: images/frockbox/frockbox-goop.svg
 display_image: images/frockbox/frockbox-tablet-macbook.png
 logo: images/frockbox/frockbox-logo.svg

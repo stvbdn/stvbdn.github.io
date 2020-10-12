@@ -1,15 +1,19 @@
 ---
 layout: project
+home_side: left
+project_name: heart-and-bones
+type: Web App
+title: Heart + Bones
+angle_grid: true
+
 order: 1
 metatitle: Heart + Bones ✕ Stephen Baden
 metadescription: Online yoga studio focusing on functional yoga poses
-title: Heart + Bones
 headline: Online yoga studio focusing on functional yoga poses
 hyperlink: https://www.heartandbonesyoga.com/
 # hex: "6B5278"
 agency: Lift Interactive
 role: Lead Developer
-type: Web App
 goop: images/heartandbones/hnb-goop.svg
 display_image: images/heartandbones/hnb-mobile-stack.png
 logo: images/heartandbones/heart-and-bones-logo.svg
