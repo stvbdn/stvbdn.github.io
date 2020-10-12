@@ -34,13 +34,13 @@ content_2_title: If you want to go far, go together
 content_2: Community engagment was a big part of the UWalk's goal. We build out community challenges that would allow users to compete cooperatively and competively against each other to reach their goal.
 
 features:
-    - Activity tracking of both steps and stairs by connecting a fitness tracking device or by manually entering activiy.
+    - Activity tracking of both steps and stairs by connecting a fitness tracking device or by manually entering activity.
     - Achievement system that lets users earn badges by accomplishing daily challenges or by hitting milestones.
-    - A feature-rich community section that lets user's create and join communities with their fellow walkers to compete cooperatively and competively in challenges.
+    - A feature-rich community section that lets users create and join communities with their fellow walkers to compete cooperatively and competively in challenges.
     - Beautiful dashboard for users to view current and historical step data, along with friends activity and challenge progress.
 
 content_3_title: Stepping their game up
-content_3: The launch of UWalk received much buzz and was embraced immediately by businesses looking to engage their employees with a fun and engaging way of incorporating fitness into their worklife.
+content_3: The launch of UWalk received much buzz and was embraced immediately by businesses looking to engage their employees with a fun and social way of incorporating fitness into their worklife.
 
 # Images
 three_across: images/uwalk/3-across.png

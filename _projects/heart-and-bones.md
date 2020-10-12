@@ -26,19 +26,19 @@ circle_color: DCEBEB
 
 # Content
 intro_title: Namaste
-intro_content: Heart & Bones was a succesful online yoga studio. What set it apart was it's philosophy of teaching susatainable, pracitcal yoga that could be practiced by anyone of any body shape and size.
+intro_content: Heart & Bones was a successful online yoga studio. What set it apart was it's philosophy of teaching sustainable, pracitcal yoga that could be practiced by anyone of any body shape and size.
 
 content_1_title: Upward Dog
-content_1: Success comes with its own problems. Brea hit the point where she had enough students that it was time to switch off the third-party service she was using to a custome website
+content_1: Success comes with its own problems. Brea hit the point where she had enough students that it was time to switch off the third-party service she was using to a custom website.
 
 content_2_title: Stretching her goals
 content_2: The goal was to not just replicate what she currently had, but to expand on and streamline her offerings to provide her users with a big upgrade in expereince.
 
 features:
-    - A fully-featured subscription system with a more economical sign up flow for her users to reduce the friction of signing up
-    - Direct Stripe integration to reduce fee associated with third-party providers
-    - Customizable lesson builder for Brea to create beautiful lessons for her students to read and watch
-    - Modern admin dashboard for Brea to manage all her users and content, accesible user interface for students to easily navigate their lessons and progress.
+    - A fully-featured subscription system with a more economical sign up flow for her users to reduce the friction of signing up.
+    - Direct Stripe integration to reduce fees associated with third-party providers.
+    - Customizable lesson builder for Brea to create beautiful lessons for her students to read and watch.
+    - Modern admin dashboard for Brea to manage all her users and content, accessible user interface for students to easily navigate their lessons and progress.
 
 content_3_title: To a brighter tomorrow
 content_3: Immediatley after launch, Brea was saving 3% on every subscription. Followed by an increase in subscribers by 20% the following year.

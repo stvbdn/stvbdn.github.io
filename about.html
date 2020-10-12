@@ -1,14 +1,75 @@
 ---
 layout: main
 ---
-<div class="hero-messaging-wrap">
-  <div class="hero-messaging">
-    <div>
-      <p>Hi, I’m <strong>Stephen Baden</strong>. I’ve been creating digital products for over 8 years.</p>
-      <p>Want to work on something together?</p>
-      <p><a href="mailto:skbaden@gmail.com">Drop me a line.</a></p>
-      <p>1+(780)938-3913</p>
-      <p>hello@stvbdn.com</p>
+
+<div class="container">
+  <div class="section">
+    <!-- Nav-->
+    <a href="/"><img class="nav-logo" src="/images/sb-logo.svg"></a>
+    <div class="nav">
+      <a class='nav-item'>About</a>
+      <a class='nav-item btn' href="mailto:hello@stephenbaden.dev">Say Hello</a>
+    </div>
+    <!-- END Nav-->
+  </div>
+
+  <div class="about section">
+    <img class="load-hidden" height=300 src="/images/profile.jpeg" alt="">
+    <div class="about-content">
+      <h1 class="load-hidden">A little about me</h1>
+      <p class="load-hidden">I've been building web and mobile applications for 10+ years, and have had the pleasure of helping clients across a wide variety of industries bring their vision to life through technology and design.</p>
+      <p class="load-hidden">Got an idea you want help with or just want to say hi? Drop me a line:</p>
+      <a class="load-hidden" href="mailto:hello@stephenbaden.dev">hello@stephenbaden.dev</a>
     </div>
   </div>
 </div>
+
+
+
+
+<script type="application/javascript">
+  var slideDown = {
+    distance: '10%',
+    origin: 'top',
+    delay: 0,
+    duration: 700,
+    opacity: 0,
+    delay: 100
+  };
+  var slideUp = {
+    distance: '10%',
+    origin: 'bottom',
+    delay: 0,
+    duration: 700,
+    opacity: 0,
+    delay: 100
+  };
+  var slideRight = {
+    distance: '10%',
+    origin: 'left',
+    delay: 50,
+    duration: 700,
+    opacity: 0,
+    delay: 100
+  };
+  var slowFade = {
+    // origin: 'left',
+    // delay: 50,
+    duration: 2000,
+    opacity: 0,
+    delay: 600
+  };
+  var normalFade = {
+    // origin: 'left',
+    // delay: 50,
+    duration: 2000,
+    opacity: 0,
+    // delay: 600
+  };
+
+
+  ScrollReveal().reveal('.about img', slideUp);
+  ScrollReveal().reveal('.about p', normalFade);
+  ScrollReveal().reveal('.about h1', slideUp);
+  ScrollReveal().reveal('.about a', slowFade);
+</script>

@@ -30,14 +30,14 @@ content_2_title: Planning doesn't have to be boring
 content_2: One of the big challenges was to take the life planning portion of the current program and change it from feeling clinical and beauracratic into something that felt personal and a joy to use. We took the boring and sterile forms and transformed them into a new social media inspired format to make the whole process more humanized and fun to use - never making it feel like work.
 
 features:
-    - A full reproduced case-management and life planning tool used to help those with dissabilities lead a better life
-    - A transformative user interface that takes dry paperwork and reimagines it as a fun to use social media inspired application.
+    - A fully reproduced case-management and life planning tool used to help those with dissabilities lead a better life.
+    - A transformative user interface that takes dry paperwork and reimagines it as a fun to use, social media inspired application.
     - A system designed for engagement built around notifications, achievements, and goal progression.
-    - Rich data exports to use both interally by organizations, and externally in for governemnet compliant formatting required for funding.
+    - Rich data exports to use both interally by organizations, and externally in governemnet compliant formatting required for funding.
     - Collaborative mapping to help users and contributors build a personalized map of all the important places in their community.
 
 content_3_title: Paving a new path
-content_3: With 10 local organizations getting onboard the new system, and more on the way, MyCompass is already making an impact on the lives of individuals and those helping them lead not just an okay life, but a great life.
+content_3: With 10 local organizations getting on board the new system, and more on the way, MyCompass is already making an impact on the lives of individuals and those helping them lead not just an okay life, but a great life.
 
 # Images
 three_across: images/mycompass/3-across.png

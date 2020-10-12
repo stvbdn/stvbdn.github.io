@@ -35,10 +35,10 @@ content_2_title: Data made beautiful
 content_2: Along with an improved feature set, the new application came with a new beautiful modern user interface that made data sexy.
 
 features:
-    - Powerful forecasting engine for providing pricing estimates
-    - Customizable data points to allow for user assumptions and hypotheticals
-    - Bloomberg integration for pulling in the most up-to-date and accurate prices
-    - Elegant visual data dashboard to view futures estimates
+    - Powerful forecasting engine for providing pricing estimates.
+    - Customizable data points to allow for user assumptions and hypotheticals.
+    - Bloomberg integration for pulling in the most up-to-date and accurate prices.
+    - Elegant visual data dashboard to view futures estimates.
     - Ability to save and load preset and user-saved data models and scenarios for quick access to different assumption scenarios.
 features_image_class: features-image-phone
 

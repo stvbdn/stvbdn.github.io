@@ -34,10 +34,10 @@ features:
     - A flexible subscription system that simplifies the the entire user experience from sign-up to returns.
     - Online catalogue and stylist dashboard allowing for stylists to browse clothes and pack orders wihtout ever having to leave their computer.
     - Payment and shipping integration with Stripe and Shipstation to automate subscription charges and mail order generation.
-    - Refreshed marketting site with dynamic content and a new responsive design.
+    - Refreshed marketing site with dynamic content and a new responsive design.
 
 content_3_title: The empress' new clothes
-content_3: The new and improved system was praised not only by Jenna, but by her staff and subscribers alike. With a new streamlined workflow and ability and improved user experience, Frockbox is all set to continue expanding.
+content_3: The new and improved system was praised not only by Jenna, but by her staff and subscribers alike. With a new streamlined workflow and improved user experience, Frockbox is all set to improve people's style for years to come.
 
 # Images
 three_across: images/frockbox/3-across.png

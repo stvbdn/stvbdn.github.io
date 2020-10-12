@@ -8,6 +8,7 @@ html.sr .load-hidden {
 html, body{
     margin: 0px;
     background-color: #161616;
+    scroll-behavior: smooth;
 }
 h1{
     font-family: 'Merriweather', serif;
@@ -39,12 +40,25 @@ p{
     font-size: 16px;
     margin-right: 50px;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #161616;
 }
 .btn{
     background-color: #161616;
     color: white;
     padding: 15px 20px;
     border-radius: 6px;
+    text-decoration: none;
+    
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.btn:hover{
+    opacity: 0.5 !important;
+    cursor: pointer;
 }
 
 /* END Nav */
@@ -131,6 +145,15 @@ p{
     width:auto;
     display: inline-block;
     margin-bottom: 50px;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.project:hover {
+    opacity: 0.5 !important;
 }
 .project-image{
     width: 100%;
@@ -191,24 +214,6 @@ p{
     padding-right: 30px;
 }
 /* END Contact */
-
-
-/* Animations */
-.bounce {
-    animation-name: bounce;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-@keyframes bounce {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(10px); }
-    100% { transform: translateY(0); }
-}
-/* END Animations */
-
-
-
 
 /* Case Study */
 .nav-logo{
@@ -360,6 +365,9 @@ p{
 .launch-site{
     margin-bottom: 100px;
 }
+.launch-site a{
+    color: #161616;
+}
 .casestudy-bug{
     display: block;
     padding-top:20px;
@@ -370,6 +378,10 @@ p{
     /* background-color: teal; */
     text-align: center;
     background-color: #F5F5F5;
+    padding-bottom: 50px;
+}
+.other-casestudies a{
+    text-decoration: none;
 }
 .other-casestudy{
     display: inline-block;
@@ -378,6 +390,15 @@ p{
     max-width: 49%;
     margin-top: 20px;
     margin-bottom: 20px;
+    
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.other-casestudy:hover {
+    opacity: 0.5 !important;
 }
 .other-casestudy-content-container{
     display: flex;
@@ -415,11 +436,38 @@ p{
 }
 /* END Case Study */
 
+/* About */
+.about{
+    height: 100vh;
+    max-width: 900px;
+    margin-top: 100px;
+}
+.about img{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about-content{
+    margin-left: 20px;
+}
+.about h1{
+    font-size: 32px;
+}
+.about p{
+    font-size: 18px;
+}
+.about a{
+    font-size: 24px;
+    color: #161616;
+}
+/* END About */
 
 
-
-/* Media Cast Study */
+/* Media Case Study */
 @media screen and (max-width: 1000px) {
+    .about img{
+        float: none;
+    }
     .casestudy-image-container{
         width: 100%;
         display: inline-block;
@@ -465,6 +513,7 @@ p{
         font-size: 1.1em;
     }
 }
+/* END Media Case Study  */
 
 
 /* Media Phone */
@@ -532,3 +581,17 @@ p{
     /* END Case Study */
 }
 /* END Media Phone */
+
+/* Animations */
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+/* END Animations */
