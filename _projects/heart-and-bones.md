@@ -41,7 +41,7 @@ features:
     - Modern admin dashboard for Brea to manage all her users and content, accessible user interface for students to easily navigate their lessons and progress.
 
 content_3_title: To a brighter tomorrow
-content_3: Immediatley after launch, Brea was saving 3% on every subscription. Followed by an increase in subscribers by 20% the following year.
+content_3: Immediately after launch, Brea was saving 3% on every subscription. Followed by an increase in subscribers by 20% the following year.
 
 # Images
 three_across: images/heartandbones/heartandbones-3-across.png
