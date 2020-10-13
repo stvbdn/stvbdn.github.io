@@ -527,6 +527,9 @@ p{
     }
     /* END Nav  */
     /* Hero */
+    .hero-section{
+        height: 80vh;
+    }
     .hero-content {
         bottom: 5em;
         left: 2em;

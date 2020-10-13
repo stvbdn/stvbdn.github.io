@@ -31,7 +31,7 @@ content_2_title: An endless wardrobe
 content_2: A big bottleneck with processing orders was choosing pieces for each user. The stylist would have to go through each rack of clothes and pick out which pieces to include for each order. We removed the need for stylists to physically look at each piece by bringin the entire catalogue online, allowing the stylist to view, filter, and add a piece to a subscribers order.
 
 features:
-    - A flexible subscription system that simplifies the the entire user experience from sign-up to returns.
+    - A flexible subscription system that simplifies the  entire user experience from sign-up to returns.
     - Online catalogue and stylist dashboard allowing for stylists to browse clothes and pack orders wihtout ever having to leave their computer.
     - Payment and shipping integration with Stripe and Shipstation to automate subscription charges and mail order generation.
     - Refreshed marketing site with dynamic content and a new responsive design.
