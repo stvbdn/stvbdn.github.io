@@ -10,7 +10,7 @@ order: 2
 metatitle: Resalytics ✕ Stephen Baden
 metadescription: Futures forecasting with on steroids
 headline: Futures forecasting with on steroids
-hyperlink: https://www.resalytics.com/
+hyperlink: http://resalytics.hootresearch.com/
 # hex: "6B5278"
 agency: Lift Interactive
 role: Lead Developer
